@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="navbar.css">
-    <title>Search ducks</title>   
+    <link rel="stylesheet" href="navbar.css" />
+    <title>Search ducks</title>
   </head>
   <body>
     <ul class="topnav">
       <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="add.html">Add ducks</a></li>        
+      <li><a href="add.html">Add ducks</a></li>
       <li><a href="search.html">Search ducks</a></li>
       <li><a href="pond.html">Pond</a></li>
     </ul>
@@ -31,7 +31,7 @@
       let ducks = [];
 
       async function getAll() {
-        let host = "http://localhost:8080";
+        let host = "http://localhost:1010";
         return fetch(host + "/ducks")
           .then((response) => response.json())
           .catch((error) => {
